@@ -101,7 +101,7 @@ const Post = ({ post }) => {
   const bookmarkHandler = async () => {
     try {
       const res = await axios.get(
-        `http://localhost:8000/api/v1/post/${post?._id}/bookmark`,
+        `https://insta-clone-backend-eeh5.onrender.com/api/v1/post/${post?._id}/bookmark`,
         { withCredentials: true }
       );
       if (res.data.success) {
