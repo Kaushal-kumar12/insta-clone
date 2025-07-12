@@ -38,7 +38,7 @@ const FollowingList = () => {
 
   const handleFollowToggle = async (targetUserId) => {
     try {
-      await axios.post(`http://localhost:8000/api/v1/user/followorunfollow/${targetUserId}`, {}, { withCredentials: true });
+      await axios.post(`https://insta-clone-backend-eeh5.onrender.com/api/v1/user/followorunfollow/${targetUserId}`, {}, { withCredentials: true });
 
       setFollowingMap(prev => ({
         ...prev,
