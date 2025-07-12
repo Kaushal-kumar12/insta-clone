@@ -28,7 +28,7 @@ const FollowersList = () => {
   useEffect(() => {
     const fetchFollowers = async () => {
       try {
-        const res = await axios.get(`http://localhost:8000/api/v1/user/${id}/followers`, { withCredentials: true });
+        const res = await axios.get(`https://insta-clone-backend-eeh5.onrender.com/api/v1/user/${id}/followers`, { withCredentials: true });
         setFollowers(res.data.followers || []);
       } catch (err) {
         console.error("Failed to load followers:", err);
