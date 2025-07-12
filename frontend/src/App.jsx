@@ -66,7 +66,7 @@ function App() {
 
   useEffect(() => {
     if(user) {
-      const socketio = io('http://localhost:8000', {
+      const socketio = io('https://insta-clone-backend-eeh5.onrender.com', {
         query: {
           userId: user?._id
         },
